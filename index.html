@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header --> 
+    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="background: #1459ba;">
+      <a class="navbar-brand col-md-3 col-lg-2 ms-2 px-3 fs-6 m-1" href="#"><img src="/Assets/Icon/UA_Logo.png" width="70" alt=""></a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+          <div class="container mx-3">
+            <i class="fa-solid fa-user p-2 rounded-circle bg-light" style="color: #000000;"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container-fluid" style="background: #0049b1 ;">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block glassmorph sidebar collapse">
+          <div class="position-sticky sidebar-sticky glassmorph">
+            <ul class="nav flex-column">
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-address-card mx-2" style="color: #ffffff;"></i>
+                    Minat
+                </a>
+              </li>
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-user-group mx-2" style="color: #ffffff;"></i>
+                    Data user
+                </a>
+              </li>
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-gem mx-2" style="color: #ffffff;"></i>
+                    Products
+                </a>
+              </li>
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link" href="#">
+                    <i class="fa-sharp fa-solid fa-file mx-2" style="color: #ffffff;"></i>
+                    Sales & Reseller
+                </a>
+              </li>
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2 align-text-bottom" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item border-bottom p-2">
+                <a class="nav-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers align-text-bottom" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  Integrations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="container border round m-3">
+                <div class="row">
+                    <div class="col-12 border-bottom p-3">
+                        <span class=""><i class="fa-solid fa-arrow-left border p-3"></i></span>
+                        <h5>Tambah Data Minat</h5>
+                        <p class="text-bold">Data Minat</p>
+                    </div>
+                </div>
+
+                <!-- Data Pemohon -->
+                <div class="container mb-5">
+                    <h2 class="mt-3">Data Pemohon</h2>
+                        <div class="row p-3 border rounded m-3">
+                            <div class="col-3">
+                                <span><p>Kode Minat *</p></span>
+                                <input type="text" class="w-100 rounded">
+                            </div>
+                            <div class="col-9">
+                                <span><p class="fw-bold">Nama Pemohon *</p></span>
+                                <input type="text" class="w-100 rounded">
+                            </div>
+                        </div>
+                    </div>
+
+
+                <!-- Lokasi -->
+                <div class="container mb-5">
+                    <h2>Lokasi</h2>
+                    <div class="row p-3 border m-3 pb-5">
+                        <div class="col-6">
+                            <div class="dropdown">
+                                <span><p class="fw-bold">Provinsi *</p></span>
+                                <button class="btn w-100 btn-secondary dropdown-toggle glassmorph" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ACEH
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <div class="dropdown">
+                                <span><p class="fw-bold">Kabupaten *</p></span>
+                                <button class="btn w-100 btn-secondary dropdown-toggle glassmorph" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  --pilih kabupaten--
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <div class="dropdown">
+                                <span><p class="fw-bold">Kecamatan *</p></span>
+                                <button class="btn w-100 btn-secondary dropdown-toggle glassmorph" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    --pilih kecamatan--
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-2">
+                            <div class="dropdown">
+                                <span><p class="fw-bold ">Kelurahan *</p></span>
+                                <button class="btn w-100 btn-secondary dropdown-toggle glassmorph" type="button" name="kelurahan" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  --pilih kelurahan--
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-2">
+                            <label for="kops"> Kantor Pos *</label>
+                            <input type="text" name="kops" class="w-100 rounded">
+                        </div>
+                        <div class="col-2 mb-2">
+                            <label for="rt">RT *</label>
+                            <input type="text" name="rt" class="w-100 rounded">
+                        </div>
+                        <div class="col-2 mb-2">
+                            <label for="rw">RW *</label>
+                            <input type="text" name="rw" class="w-100 rounded">
+                        </div>
+                        <div class="col-5 mb-2">
+                            <label for="koor">Kordinat *</label>
+                            <input type="text" name="koor" class="w-100 rounded">
+                        </div>
+                        <div class="col-12">
+                            <label for="alamat">Alamat *</label>
+                            <input type="text" name="alamat" class="w-100 h-100 rounded">
+                        </div>
+                    </div>
+
+                        <div class="container-fluid">
+                            <div class="row justify-content-between p-3 column-gap-2">
+                                <div class="col-5 border p-3">
+                                    <label for="notelp">No Telp *</label>
+                                    <input type="text" name="notelp" class="w-100 mb-2 rounded">
+                                    <label for="whatsapp">Whatsapp *</label>
+                                    <input type="text" name="whatsapp" class="w-100 mb-2 rounded">
+                                    <label for="email">Email *</label>
+                                    <input type="text" name="email" class="w-100 mb-2 rounded">
+                                </div>
+                                <div class="col-5 border p-3">
+                                    <label for="layanan">Layanan *</label>
+                                    <input type="text" name="layanan" class="w-100 mb-2 rounded">
+                                    <label for="kecepatan">Kecepatan *</label>
+                                    <input type="text" name="kecepatan" class="w-100 mb-2 rounded">
+                                    <label for="sales">Sales *</label>
+                                    <input type="text" name="sales" class="w-100 mb-2 rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                    
+               <!-- Upload Foto -->
+                <div class="contianer-fluid ">
+                    <h3>Upload Foto</h3>
+                     <div class="row p-3 border m-3">
+                        <div class="col-12 p-3">
+                            <label for="foto">Foto Lokasi</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            </div>
+                            <label for="foto">Ukuran Maksimal file : 2 MB | Format file yang diperbolehkan: .png .jpg .jpeg</label>
+                        </div>
+                    </div>
+                </div>
+                        
+
+
+
+                
+                    </div>
+                </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    
+    
+  
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+</body>
+</html>
